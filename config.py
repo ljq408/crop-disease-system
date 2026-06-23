@@ -6,6 +6,18 @@
 
 import os
 
+
+def _get_secret(key: str, env_var: str, default: str = "") -> str:
+    """从 Streamlit Secrets 或环境变量读取配置"""
+    try:
+        import streamlit as st
+        if hasattr(st, 'secrets') and key in st.secrets:
+            return st.secrets[key]
+    except Exception:
+        pass
+    return os.getenv(env_var, default)
+
+
 class Config:
     """系统全局配置类"""
 
@@ -30,16 +42,6 @@ class Config:
     # ============ LLM 大模型配置 ============
     # 优先级: Streamlit Secrets > 环境变量 > 默认值
     # Streamlit Cloud 部署时通过 .streamlit/secrets.toml 配置密钥
-    @classmethod
-    def _get_secret(cls, key: str, env_var: str, default: str = "") -> str:
-        """从 Streamlit Secrets 或环境变量读取配置"""
-        try:
-            import streamlit as st
-            if hasattr(st, 'secrets') and key in st.secrets:
-                return st.secrets[key]
-        except Exception:
-            pass
-        return os.getenv(env_var, default)
 
     # 方案1: 阿里云通义千问 API (推荐)
     LLM_PROVIDER = "qwen"                       # qwen / openai / ollama / mock

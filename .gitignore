@@ -1,0 +1,52 @@
+# Python 编译文件
+__pycache__/
+*.pyc
+*.pyo
+
+# 数据文件（PlantVillage 数据集太大不上传）
+data/PlantVillage/
+
+# 模型权重文件（大型二进制文件）
+models/weights/*.pth
+models/weights/*.pt
+models/weights/*.bin
+
+# 训练日志
+logs/
+
+# 历史记录
+assets/history.json
+
+# 运行脚本（本地专用）
+run.bat
+run.sh
+
+# 临时穿透工具
+cloudflared.exe
+
+# Streamlit Secrets（含密钥，勿提交！）
+# 注意：.streamlit/secrets.toml 模板文件不含密钥可提交，
+# 但填入真实密钥后不应提交到 Git
+
+# IDE / 系统
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Node.js（项目构建工具，非应用依赖）
+node_modules/
+package.json
+package-lock.json
+
+# 其他非必要文件
+*.zip
+*.docx
+*.pptx
+ngrok/
+ngrok.zip
+report_content.md
+build_p*.js
+fix_quotes.py

@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp": "2026-06-22 20:46:20",
+    "zh_name": "苹果锈病",
+    "class_name": "Apple___Cedar_apple_rust",
+    "plant": "苹果",
+    "confidence": 0.4944657578946097,
+    "is_healthy": false,
+    "is_demo": true
+  },
+  {
+    "timestamp": "2026-06-22 20:47:10",
+    "zh_name": "苹果黑腐病",
+    "class_name": "Apple___Black_rot",
+    "plant": "苹果",
+    "confidence": 0.5990305739743687,
+    "is_healthy": false,
+    "is_demo": true
+  },
+  {
+    "timestamp": "2026-06-22 20:47:25",
+    "zh_name": "玉米大斑病",
+    "class_name": "Corn_(maize)___Northern_Leaf_Blight",
+    "plant": "玉米",
+    "confidence": 0.45328962805078643,
+    "is_healthy": false,
+    "is_demo": true
+  },
+  {
+    "timestamp": "2026-06-22 21:00:49",
+    "zh_name": "桃细菌性穿孔病",
+    "class_name": "Peach___Bacterial_spot",
+    "plant": "桃",
+    "confidence": 0.5049164563942319,
+    "is_healthy": false,
+    "is_demo": true
+  },
+  {
+    "timestamp": "2026-06-22 21:02:48",
+    "zh_name": "苹果锈病",
+    "class_name": "Apple___Cedar_apple_rust",
+    "plant": "苹果",
+    "confidence": 0.615418784804168,
+    "is_healthy": false,
+    "is_demo": true
+  }
+]

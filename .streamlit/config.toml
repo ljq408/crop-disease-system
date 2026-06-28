@@ -1,0 +1,11 @@
+[theme]
+# 农业绿色主题 - 覆盖Streamlit默认蓝色系
+primaryColor = "#2E7D32"
+backgroundColor = "#F5FAF5"
+secondaryBackgroundColor = "#E8F5E9"
+textColor = "#1B3A1B"
+font = "sans serif"
+
+[server]
+headless = true
+gatherUsageStats = false

@@ -46,7 +46,7 @@ st.markdown("""
 :root {
     --primary: #2E7D32;
     --primary-light: #4CAF50;
-    --accent: #FF6F00;
+    --accent: #388E3C;
     --bg-card: #F9FBF9;
     --border-light: #C8E6C9;
 }
@@ -85,7 +85,7 @@ st.markdown("""
     margin-left: 8px;
 }
 .severity-none     { background: #E8F5E9; color: #2E7D32; }
-.severity-moderate { background: #FFF8E1; color: #F57F17; }
+.severity-moderate { background: #FFF8E1; color: #827717; }
 .severity-severe   { background: #FBE9E7; color: #BF360C; }
 .severity-fatal    { background: #FCE4EC; color: #880E4F; }
 
@@ -98,7 +98,7 @@ st.markdown("""
 
 /* Demo 模式警告条 */
 .demo-banner {
-    background: linear-gradient(90deg, #FF6F00, #FFA000);
+    background: linear-gradient(90deg, #388E3C, #66BB6A);
     color: white;
     padding: 8px 16px;
     border-radius: 8px;
